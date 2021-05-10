@@ -516,3 +516,5 @@ if __name__ == '__main__':
 
 # COMMENT TO TEST COMMIT TO GITHUB
 # COMMENT TO TEST CREDENTIAL STORE
+# COMMENT TO TEST PUSH OVERRIDE CREDENTIAL STORE
+# git push https://'roni-polymod':'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'@github.com/B_user_name/project.git
