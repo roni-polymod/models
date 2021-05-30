@@ -285,7 +285,7 @@ def main():
     my_parser = argparse.ArgumentParser(description='Write SVG file for polyhedron face or edge models')
     my_parser.add_argument('Polyhedron', metavar='poly', type=str, help='polyhedron name')
     my_parser.add_argument('SizeTypeKey', metavar='stkey', type=str, help='dict key to size, type and repeat parameters')
-    my_parser.add_argument('-n', '--filename', action='store', help='relative path and file name to save, (defaults polyhedron name current folder')
+    my_parser.add_argument('-n', '--filename', action='store', help='relative path and file name to save, (default polyhedron name.svg in current folder)')
     my_parser.add_argument('-a', '--array', action='store_true', help='True for array repetition of pieces, default to single piece')
     my_parser.add_argument('-f', '--face', action='store_true', help='Face model (default)')
     my_parser.add_argument('-e', '--edge', action='store_true', help='Edge model (no effect if -f also used)')
