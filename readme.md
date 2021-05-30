@@ -1,5 +1,6 @@
 Dependencies
 ------------
+
 svgwrite - install instructions at https://pypi.org/project/svgwrite/
 
 the svgwrite module is only referenced in one function, write_svg_file in write_model_file.py so if you have a better
@@ -7,26 +8,33 @@ svg writing module it can be easily substituted.
 
 Usage
 -----
+
 $ python write_model_file.py [-h] [-n FILENAME] [-a] [-f] [-e] poly stkey
 
 Write SVG file for polyhedron face or edge models
 
 positional arguments:
+
   poly                  polyhedron name
+
   stkey                 dict key to size, type and repeat parameters
 
 optional arguments:
+
   -h, --help            show this help message and exit
-  -n FILENAME, --filename FILENAME
-                        relative path and file name to save, (defaults
-                        polyhedron name current folder
-  -a, --array           True for array repetition of pieces, default to single
-                        piece
+
+  -n FILENAME, --filename FILENAME            relative path and file name to save, (defaults to polyhedron name.svg in current folder)
+
+  -a, --array           True for array repetition of pieces, default to single piece
+
   -f, --face            Face model (default)
+
   -e, --edge            Edge model (no effect if -f also used)
+
 
 Examples
 --------
+
 $ python write_model_file.py cube 5e
 
 will create a single face for a cube with 50mm edge (5e size and type key parameter). The file will be saved as cube.svg in the working directory.
@@ -45,4 +53,6 @@ instructions also at the above url.
 
 Copyright
 ---------
+
 None, use as you wish but please do share anything interesting.
+
